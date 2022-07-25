@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("../fonts/coolvetica.otf");
+}
+
+@font-face {
+    font-family: LouisCafe;
+    src: url("../fonts/Louis George Cafe.ttf");
+}
+
+html {
+    scrollbar-color: #949494;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #F8FAFF;
+    overflow-x: hidden;
+    cursor: default;
+    margin: 0;
+    font-family: LouisCafe, sans-serif;
+}

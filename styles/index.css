@@ -1,0 +1,447 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("../fonts/coolvetica.otf");
+}
+
+@font-face {
+    font-family: LouisCafe;
+    src: url("../fonts/Louis George Cafe.ttf");
+}
+
+html {
+    scrollbar-color: #949494;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #F8FAFF;
+    overflow-x: hidden;
+    cursor: default;
+    margin: 0;
+    font-family: LouisCafe, sans-serif;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    margin-top: 10px;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #2E2D2D;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #2d6a4f;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-top: 15px;
+    height: auto;
+    width: 139px;
+}
+
+#dropbtn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #2d6a4f;
+    border-radius: 10px;
+    background-color: #F8FAFF;
+    cursor: pointer;
+}
+
+#dropbtn:hover {
+    background-color: #dddfe7;
+}
+
+#loginBtn {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #2d6a4f;
+    color: #dddfe7;
+    font-size: 12px;
+    position: absolute;
+    left: 90%;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 2px solid #2d6a4f;
+}
+
+#loginBtn:hover {
+    background-color: #ffffff;
+    color: #2d6a4f;
+}
+
+#profilBtn {
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2d6a4f;
+    color: #dddfe7;
+    font-size: 12px;
+    position: absolute;
+    left: 90%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#profilBtn:hover {
+    background-color: #2d6a4f;
+}
+
+#search {
+    cursor: pointer;
+    color: #2E2D2D;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 0;
+    left: 85%;
+}
+
+#search:hover {
+    color: rgba(94, 94, 94, 0.60);
+}
+
+.dropdown-Product {
+    display: none;
+    position: absolute;
+    left: 36.2%;
+    margin-top: -6px;
+    background-color: #2d6a4f;
+    border-radius: 3px;
+}
+
+#product {
+    background-color: #2d6a4f;
+}
+
+.noDrop {
+    display: none;
+}
+
+.drop {
+    display: block;
+}
+
+.dropdown-Product a {
+    color: #dddfe7;
+}
+
+.drop:hover .dropdown-Product {
+    display: block;
+}
+
+@media (max-width: 1300px){
+    .navbar a:hover {
+        text-decoration-color: #dddfe7;
+    }
+    .navbar .navmenu {
+        flex-flow: column wrap;
+        margin-top: 30px;
+    }
+    .drop {
+        display: none;
+    }
+    .noDrop {
+        display: block;
+    }
+    .logodiv {
+        position: absolute;
+        left: 5%;
+        top: 2%;
+    }
+    #dropbtn {
+        display: block;
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    .navmenu li {
+        display: none;
+        position: relative;
+        top: 32px;
+        background-color: #2d6a4f;
+    }
+
+    .navmenu a {
+        text-align: right;
+        color: #dddfe7;
+    }
+
+    .navbar a:hover {
+        color: #dddfe7;
+    }
+
+    #loginBtn  {
+        width: 100%;
+        height: 50px;
+        left: 0;
+        border-radius: 0;
+        top: -15px;
+        text-align: right;
+        border: 11px solid #2d6a4f;
+        font-size: 14px;
+    }
+
+    #loginBtn:hover {
+        background-color: #2d6a4f;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+
+    #profilBtn  {
+        width: 100%;
+        height: 50px;
+        left: 0;
+        border-radius: 0;
+        top: -15px;
+        text-align: right;
+        border: 11px solid #2d6a4f;
+        font-size: 14px;
+    }
+
+    #profilBtn:hover {
+        background-color: #2d6a4f;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+    }
+    #shopcart {
+        left: 95%;
+        margin-top: 107px;
+    }
+    #search {
+        left: 86%;
+        margin-top: 66px;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .logodiv {
+        position: absolute;
+        left: 5%;
+    }
+    .navmenu li {
+        display: inline-block;
+    }
+    #dropbtn {
+        display: none;
+    }
+}
+
+#head {
+    height: 647px;
+}
+
+#illustration1 {
+    position: absolute;
+    height: auto;
+    width: 510px;
+    margin-left: 59%;
+    margin-top: 95px;
+}
+
+#Titre1 {
+    position: relative;
+    font-size: 55px;
+    margin-left: 12%;
+    top: 171px;
+    color: #242424;
+}
+ #Presentation {
+     position: relative;
+     font-size: 23px;
+     margin-left: 5%;
+     top: 204px;
+     color: #60695C;
+ }
+
+ #contact {
+     width: 130px;
+     height: 32px;
+     border-radius: 10px;
+     background-color: #2d6a4f;
+     color: #dddfe7;
+     font-size: 14px;
+     position: absolute;
+     left: 11%;
+     margin-top: 224px;
+     cursor: pointer;
+     border: 2px solid #2d6a4f;
+     text-decoration: none;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #contact:hover {
+     background-color: #FFFFFFFF;
+     color: #2d6a4f;
+ }
+
+ #Titre2 {
+     position: relative;
+     font-size: 34px;
+     color: #242424;
+     text-decoration: underline;
+     margin-left: 43%;
+ }
+
+ .profilcheval1 {
+     position: relative;
+     background-color: #2d6a4f;
+     margin-left: 5%;
+     width: 236px;
+     height: 301px;
+     border-radius: 10px;
+     z-index: 0;
+     margin-right: 30px;
+     cursor: pointer;
+ }
+
+ .illustration2 {
+     position: absolute;
+     margin-left: 7%;
+     top: 20px;
+     width: 202px;
+     height: 206px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 7px grey;
+     z-index: 1;
+ }
+
+ .nom1 {
+     position: relative;
+     font-size: 18px;
+     color: #ffffff;
+     margin-left: 28%;
+     top: 255px;
+     z-index: 1;
+ }
+
+ #racecarte {
+     display: flex;
+     flex-direction: row;
+     margin-left: auto;
+     margin-right: auto;
+     width: fit-content;
+     margin-top: 79px;
+ }
+
+ #Titre3 {
+     margin-top: 67px;
+     position: relative;
+     font-size: 34px;
+     color: #242424;
+     text-decoration: underline;
+     margin-left: 41%;
+ }
+
+ .nom2 {
+     position: relative;
+     font-size: 18px;
+     color: #ffffff;
+     margin-left: 29%;
+     top: 254px;
+     z-index: 1;
+ }
+
+ #Titre4 {
+     margin-top: 67px;
+     position: relative;
+     font-size: 34px;
+     color: #242424;
+     text-decoration: underline;
+     margin-left: 41%;
+ }
+
+ .nom3 {
+     position: relative;
+     font-size: 18px;
+     color: #ffffff;
+     margin-left: 39%;
+     top: 251px;
+     z-index: 1;
+ }
+
+ .galopcheval {
+     position: relative;
+     background-color: #2d6a4f;
+     margin-left: 5%;
+     width: 236px;
+     height: 233px;
+     border-radius: 10px;
+     z-index: 0;
+     margin-right: 30px;
+     cursor: pointer;
+ }
+
+ .nom4 {
+     position: relative;
+     font-size: 20px;
+     color: #ffffff;
+     margin-left: 35%;
+     top: 192px;
+     z-index: 1;
+ }
+
+ #Titre5 {
+     margin-top: 67px;
+     position: relative;
+     font-size: 34px;
+     color: #242424;
+     text-decoration: underline;
+     margin-left: 47%;
+ }
+
+ #galopcarte {
+     display: flex;
+     flex-direction: row;
+     margin-left: 40px;
+     margin-right: auto;
+     width: fit-content;
+     margin-top: 79px;
+ }
+
+ .illustration3 {
+     position: absolute;
+     margin-left: 7%;
+     top: 20px;
+     width: 202px;
+     height: 151px;
+     border-radius: 10px;
+     box-shadow: 3px 3px 7px grey;
+     z-index: 1;
+ }
+
+ .nom5 {
+     position: relative;
+     font-size: 20px;
+     color: #ffffff;
+     margin-left: 31%;
+     top: 254px;
+     z-index: 1;
+ }
+
