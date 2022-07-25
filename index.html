@@ -11,7 +11,7 @@
 </head>
 <body>
 <div>
-    <nav class="navbar" role="navigation">
+    <nav class="navbar" role="navigation"> 
         <ul class="navmenu">
             <div class="logodiv">
                 <img class="logo" src="images/logo.png" alt="">
@@ -20,30 +20,17 @@
                 <button onclick="dropdownNav()" id="dropbtn"><i class="fas fa-bars"></i></button>
             </div>
             <div class="drop">
-                <li><a class="product-dropbtn" href="pages/races.php?type=all">Races <i class="fa-solid fa-angle-down"></i></a></li>
-                <div class="dropdown-Product">
-                    <a href="pages/races.php?type=saut">Saut</a>
-                    <a href="pages/races.php?type=dressage">Dressage</a>
-                    <a href="pages/races.php?type=trait">Trait</a>
-                    <a href="pages/races.php?type=loisir">Loisir</a>
-                    <a href="pages/races.php?type=sport">Sport</a>
-                </div>
+                <li><a class="product-dropbtn" href="pages/races.html?type=all">Races</a></li>
             </div>
             <div class="noDrop">
                 <li><a id="product" href="pages/races.php">Races</a></li>
             </div>
-            <li><a href="pages/infections.php">Infections</a></li>
-            <li><a href="pages/maladies.php">Maladies</a></li>
-            <li><a href="pages/galops.php">Galops</a></li>
-            <li><a href="pages/metiers.php">Métiers</a></li>
+            <li><a href="pages/infections.html">Infections</a></li>
+            <li><a href="pages/maladies.html">Maladies</a></li>
+            <li><a href="pages/galops.html">Galops</a></li>
+            <li><a href="pages/metiers.html">Métiers</a></li>
             <li><a href=""><i id="search" class="fas fa-search"></i></a></li>
-            <?php
-            if (!empty($_SESSION) and $_SESSION['connected'] = true) {
-                echo "<li><button id='profilBtn' onclick='openProfile()'>Profil</button></li>";
-            } else {
-                echo "<li><button id='loginBtn' onclick='openConnexion()'>Connexion</button></li>";
-            }
-            ?>
+            <li><button id='loginBtn' onclick='openConnexion()'>Connexion</button></li>
         </ul>
     </nav>
 </div>
@@ -55,7 +42,7 @@
                         et infections qu'ils subissent, mais vous trouvrez aussi toutes les études <br/>
                         possible pour travailler avec eux. Ainsi que des cours et des quizz adaptés <br/>
                         pour chaques Galop. J'espère que le site va vous plaire!</p>
-    <a id="contact" href="pages/contact.php">Contact</a>
+    <a id="contact" href="pages/contact.html">Contact</a>
 </div>
 <h2 id="Titre2">Différentes races</h2>
 <div id="racecarte">
@@ -258,8 +245,16 @@
         </div>
     </div>
 </div>
-<div>
-
+<div id="fin">
+    <div>
+        <div id="Bannière">
+            <a id="Click" class="contactfin" href="pages/contact.html">Contact</a>
+            <a id="Click"  class="conditionsfin" href="pages/conditions.html">Conditions</a>
+            <a id="Click"  class="questionfin" href="pages/question.html">Question</a>
+            <a id="Click"  class="forumfin" href="pages/forum.html">Forum</a>
+            <img class="Finlogo" src="images/logo.png">
+        </div>
+    </div>
 </div>
 </body>
 </html>

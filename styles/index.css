@@ -265,7 +265,7 @@ body {
 
 #Titre1 {
     position: relative;
-    font-size: 55px;
+    font-size: 57px;
     margin-left: 12%;
     top: 171px;
     color: #242424;
@@ -443,5 +443,70 @@ body {
      margin-left: 31%;
      top: 254px;
      z-index: 1;
+ }
+
+ #bannière {
+    background-color: #2d6a4f;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    border-radius: 16px;
+ }
+
+ #click:hover {
+    text-decoration: underline;
+    color: #5ef882;
+    cursor: pointer;
+ }
+
+ .contactfin {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    left: 18%;
+    top: 75px;
+    z-index: 1;
+ }
+
+ .conditionsfin {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    left: 33%;
+    top: 75px;
+    z-index: 1;
+ }
+
+ .questionfin {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    left: 48%;
+    top: 75px;
+    z-index: 1;
+ }
+
+ .forumfin {
+    position: relative;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    left: 63%;
+    top: 75px;
+    z-index: 1;
+ }
+
+ .Finlogo {
+    position: relative;
+    display: block;
+    margin-top: 35px;
+    margin-left: 36px;
+    height: auto;
+    width: 139px;
+    box-shadow: 2px 4px 6px white;
+    background-color: #949494;
+    border-radius: 18px;
  }
 
