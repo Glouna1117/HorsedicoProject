@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url("../fonts/coolvetica.otf");
+}
+
+@font-face {
+    font-family: LouisCafe;
+    src: url("../fonts/Louis George Cafe.ttf");
+}
+
+html {
+    scrollbar-color: #949494;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: #F8FAFF;
+    overflow-x: hidden;
+    cursor: default;
+    margin: 0;
+    font-family: LouisCafe, sans-serif;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    margin-top: 10px;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #2E2D2D;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #2d6a4f;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-top: 15px;
+    height: auto;
+    width: 139px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    margin-top: 10px;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #2E2D2D;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: #2d6a4f;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    display: block;
+    margin-top: 15px;
+    height: auto;
+    width: 139px;
+}
+
+@media (min-width: 1300px) {
+    .logodiv {
+        position: absolute;
+        left: 5%;
+    }
+    .navmenu li {
+        display: inline-block;
+    }
+    #dropbtn {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px){
+    .navbar a:hover {
+        text-decoration-color: #dddfe7;
+    }
+    .navbar .navmenu {
+        flex-flow: column wrap;
+        margin-top: 30px;
+    }
+    .drop {
+        display: none;
+    }
+    .noDrop {
+        display: block;
+    }
+    .logodiv {
+        position: absolute;
+        left: 5%;
+        top: 2%;
+    }
+    #dropbtn {
+        display: block;
+        margin-left: auto;
+        margin-right: 5px;
+    }
+
+    .navmenu li {
+        display: none;
+        position: relative;
+        top: 32px;
+        background-color: #2d6a4f;
+    }
+
+    .navmenu a {
+        text-align: right;
+        color: #dddfe7;
+    }
+
+    .navbar a:hover {
+        color: #dddfe7;
+    }
+}

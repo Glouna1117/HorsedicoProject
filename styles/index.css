@@ -81,7 +81,7 @@ body {
     font-size: 12px;
     position: absolute;
     left: 90%;
-    margin-top: 15px;
+    margin-top: 2px;
     cursor: pointer;
     border: 2px solid #2d6a4f;
 }
@@ -447,8 +447,8 @@ body {
 
  #bannière {
     background-color: #2d6a4f;
-    padding-bottom: 50px;
-    margin-top: 75px;
+    padding-bottom: 1px;
+    margin-top: 68px;
     border-radius: 16px;
  }
 
@@ -463,8 +463,8 @@ body {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    left: 18%;
-    top: 75px;
+    left: 39%;
+    top: 60px;
     z-index: 1;
  }
 
@@ -473,8 +473,8 @@ body {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    left: 33%;
-    top: 75px;
+    left: 15%;
+    top: 60px;
     z-index: 1;
  }
 
@@ -483,8 +483,8 @@ body {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    left: 48%;
-    top: 75px;
+    left: 49%;
+    top: 60px;
     z-index: 1;
  }
 
@@ -493,8 +493,8 @@ body {
     font-size: 20px;
     color: #ffffff;
     text-decoration: none;
-    left: 63%;
-    top: 75px;
+    left: 64%;
+    top: 60px;
     z-index: 1;
  }
 
@@ -505,8 +505,14 @@ body {
     margin-left: 36px;
     height: auto;
     width: 139px;
-    box-shadow: 2px 4px 6px white;
-    background-color: #949494;
-    border-radius: 18px;
+ }
+
+ .motlogo {
+    position: relative;
+    color: #2d6a4f;
+    font-size: 23px;
+    left: 5%;
+    top: -71px;
+    text-shadow: 1px 1px 2px #ffffff;
  }
 
