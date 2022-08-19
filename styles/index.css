@@ -11,6 +11,7 @@
 html {
     scrollbar-color: #949494;
     scrollbar-width: thin;
+    font-size: 100%;
 }
 
 body {
@@ -19,11 +20,22 @@ body {
     cursor: default;
     margin: 0;
     font-family: LouisCafe, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    align-items: start;
+    min-height: 100vh;
+
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
 .navbar ul {
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    margin: -2px;
+    left: 590px;
     list-style: none;
 }
 
@@ -80,8 +92,8 @@ body {
     color: #dddfe7;
     font-size: 12px;
     position: absolute;
-    left: 90%;
-    margin-top: 2px;
+    left: 175%;
+    margin-top: -2px;
     cursor: pointer;
     border: 2px solid #2d6a4f;
 }
@@ -167,7 +179,7 @@ body {
     }
     .logodiv {
         position: absolute;
-        left: 5%;
+        left: -105%;
         top: 2%;
     }
     #dropbtn {
@@ -241,7 +253,7 @@ body {
 @media (min-width: 1300px) {
     .logodiv {
         position: absolute;
-        left: 5%;
+        left: -105%;
     }
     .navmenu li {
         display: inline-block;
@@ -286,7 +298,7 @@ body {
      color: #dddfe7;
      font-size: 14px;
      position: absolute;
-     left: 11%;
+     left: 13%;
      margin-top: 224px;
      cursor: pointer;
      border: 2px solid #2d6a4f;
@@ -301,12 +313,37 @@ body {
      color: #2d6a4f;
  }
 
+ #QuiSN {
+    width: 140px;
+    height: 33px;
+    border-radius: 10px;
+    background-color: #2d6a4f;
+    color: #dddfe7;
+    font-size: 14px;
+    position: absolute;
+    left: 25%;
+    margin-top: 224px;
+    cursor: pointer;
+    border: 2px solid #2d6a4f;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#QuiSN:hover {
+    background-color: #FFFFFFFF;
+    color: #2d6a4f;
+}
+
+
+
  #Titre2 {
      position: relative;
      font-size: 34px;
      color: #242424;
      text-decoration: underline;
-     margin-left: 43%;
+     margin-left: 37.5%;
  }
 
  .profilcheval1 {
@@ -356,7 +393,7 @@ body {
      font-size: 34px;
      color: #242424;
      text-decoration: underline;
-     margin-left: 41%;
+     margin-left: 36%;
  }
 
  .nom2 {
@@ -374,7 +411,7 @@ body {
      font-size: 34px;
      color: #242424;
      text-decoration: underline;
-     margin-left: 41%;
+     margin-left: 36.5%;
  }
 
  .nom3 {
@@ -413,7 +450,7 @@ body {
      font-size: 34px;
      color: #242424;
      text-decoration: underline;
-     margin-left: 47%;
+     margin-left: 42%;
  }
 
  #galopcarte {
@@ -445,74 +482,172 @@ body {
      z-index: 1;
  }
 
- #bannière {
+ #Titre6 {
+    margin-top: 67px;
+    position: relative;
+    font-size: 34px;
+    color: #242424;
+    text-decoration: underline;
+    margin-left: 38%;
+ }
+
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 21px 238px 20px 41px;
+    color: #242424;
     background-color: #2d6a4f;
+    border-top: 1px solid #e5e5e5;
     padding-bottom: 1px;
     margin-top: 68px;
-    border-radius: 16px;
- }
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: LouisCafe, sans-serif;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+    font-weight: bold;
+  }
 
- #click:hover {
+  .nav__title:hover {
     text-decoration: underline;
-    color: #5ef882;
     cursor: pointer;
- }
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #e5e5e5;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #80ED99;
+    border-radius: 100px;
+    border-color: #242424;
+    border-style: solid;
+    border-width: 2px;
+    color: #242424;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 1.3em;
+  }
 
- .contactfin {
-    position: relative;
-    font-size: 20px;
-    color: #ffffff;
+  .footer__btn:hover {
+    background-color: #2d6a4f;
+    color: #e5e5e5;
+    border-color: #242424;
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 2px;
+    font-weight: bold;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: bold;
+  }
+  
+  .footer li {
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .footer a {
     text-decoration: none;
-    left: 39%;
-    top: 60px;
-    z-index: 1;
- }
+    font-weight: bold;
+  }
 
- .conditionsfin {
-    position: relative;
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    left: 15%;
-    top: 60px;
-    z-index: 1;
- }
-
- .questionfin {
-    position: relative;
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    left: 49%;
-    top: 60px;
-    z-index: 1;
- }
-
- .forumfin {
-    position: relative;
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    left: 64%;
-    top: 60px;
-    z-index: 1;
- }
-
- .Finlogo {
-    position: relative;
-    display: block;
-    margin-top: 35px;
-    margin-left: 36px;
-    height: auto;
-    width: 139px;
- }
-
- .motlogo {
-    position: relative;
-    color: #2d6a4f;
-    font-size: 23px;
-    left: 5%;
-    top: -71px;
-    text-shadow: 1px 1px 2px #ffffff;
- }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #e5e5e5;
+    font-weight: bold;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #e5e5e5;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #e5e5e5;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
 
