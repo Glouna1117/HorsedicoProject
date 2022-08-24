@@ -203,7 +203,7 @@ body {
         text-decoration-thickness: 2px;
         text-underline-offset: 5px;
     }
-    
+
     #shopcart {
         left: 95%;
         margin-top: 107px;
@@ -238,25 +238,25 @@ body {
 
 .titre1{
     position: relative;
-    left: 45%;
+    left: 40%;
     bottom: 375px;
     font-size: 41px;  
 }
 
 .titre2 {
     position: relative;
-    left: 55%;
-    bottom: 378px;
+    left: 49%;
+    bottom: 397px;
     font-size: 19px;
     text-decoration: underline;
 }
 
 form {
     position: relative;
-    left: 46%;
-    bottom: 346px;
+    left: 40%;
+    bottom: 383px;
     display: flex;
-    height: 35px;
+    height: 186px;
     width: 409px;
     color: #2d6a4f;
     flex-direction: column;
@@ -265,11 +265,17 @@ form {
 .id {
     margin-top: 7px;
     margin-bottom: 13px;
+    border-radius: 5px;
+    border-color: #80ED99;
+    color: #60695c;
 }
 
 .mdp {
     margin-top: 7px;
     margin-bottom: 13px;
+    border-radius: 5px;
+    border-color: #80ED99;
+    color: #60695c;
 }
 
 .btnlogin {
@@ -291,8 +297,8 @@ form {
 
 .sign_in{
     position: relative;
-    left: 46%;
-    bottom: 286px;
+    left: 40%;
+    bottom: 474px;
     font-size: 10px;
     color: #60695c;
 }
