@@ -1,1 +1,37 @@
-<?php
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/galops.css">
+    <script type="text/javascript" src="../scripts/galops.js"></script>
+    <script src="https://kit.fontawesome.com/e81b0518e0.js" crossorigin="anonymous"></script>
+    <title>HorseDico - Galops</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar" role="navigation">
+            <ul class="navmenu">
+                <div class="logodiv">
+                    <a href="../index.html"><img class="logo" src="../images/logo.png"/></a>   
+                </div>
+                <div class="dropdown">
+                    <button onclick="dropdownNav()" id="dropbtn"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="drop">
+                    <li><a class="product-dropbtn" href="../pages/races.html?type=all">Races</a></li>
+                </div>
+                <div class="noDrop">
+                    <li><a id="product" href="../pages/races.php">Races</a></li>
+                </div>
+                <li><a href="../pages/infections.html">Infections</a></li>
+                <li><a href="../pages/maladies.html">Maladies</a></li>
+                <li><a href="../pages/galops.html">Galops</a></li>
+                <li><a href="../pages/metiers.html">Métiers</a></li>
+                <li><img src="../images/search.png" id="search" class="fas fa-search"></li>
+                <li><a href="../pages/connexion.html"><button id='loginBtn'>Connexion</button></a></li>
+            <ul/>
+    </div>
+</body>
+</html>

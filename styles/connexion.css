@@ -303,12 +303,12 @@ form {
     color: #60695c;
 }
 
-a {
+.lien {
     text-decoration: none;
     color: #60695c;
 }
 
-a:hover {
+.lien:hover {
     color: #2d6a4f;
     text-decoration: underline;
 }
@@ -326,6 +326,11 @@ a:hover {
     background-color: #2d6a4f;
     border-top: 1px solid #e5e5e5;
     font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #242424;
   }
   
   .footer > * {

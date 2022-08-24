@@ -630,6 +630,11 @@ body {
   .heart {
     color: #e5e5e5;
   }
+
+  a {
+    text-decoration: none;
+    color: #242424;
+  }
   
   @media screen and (min-width: 24.375em) {
     .legal .legal__links {
