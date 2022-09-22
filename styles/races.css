@@ -31,22 +31,20 @@ body {
 
 .navmenu {
     display: flex;
-    border: 3px solid #2d6a4f;
-    border-radius: 52px;
-    width: 1710px;
+    width: 1716px;
     height: 88px;
-    top: 16px;
+    top: 74px;
     padding: 8px 233px 0px 287px;
     position: relative;
     margin: -83px;
-    left: 69px;
+    left: 67px;
     flex-direction: row;
     justify-content: center;
 }
 
 #nav {
-    margin-top: 25px;
-    margin-left: 60px;
+    margin-top: 26px;
+    margin-left: 65px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -70,7 +68,15 @@ body {
     margin-left: 34px;
     height: auto;
     width: 139px;
+
 }
+.logodiv {
+    position: absolute;
+    left: 3%;
+    top: 10px;
+    cursor: pointer;
+}
+
 
 #loginBtn {
     width: 130px;
@@ -130,6 +136,12 @@ body {
         margin-top: 30px;
     }
 
+    .logodiv {
+        position: absolute;
+        left: 3%;
+        top: 10px;
+    }
+
     #loginBtn  {
         width: 100%;
         height: 50px;
@@ -176,7 +188,7 @@ body {
 @media (min-width: 1300px) {
     .logodiv {
         position: absolute;
-        left: -105%;
-        top: -25px;
+        left: 3%;
+        top: 10px;
     }
 }
