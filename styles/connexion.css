@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: #F8FAFF;
+    flex-direction: row;
     cursor: default;
     margin: 0;
     display: grid;
@@ -23,28 +24,38 @@ body {
     overflow-x: hidden;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.navmenu {
+    padding: 2.17em;
+    display: flex;
+    top: -4px;
+    left: 81px;
+    padding: 8px 525px 0px 287px;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .logo {
     display: block;
     margin-top: -10px;
-    margin-left: -15px;
+    margin-left: 15px;
     height: auto;
     width: 139px;
 }
 
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-
-.navbar ul {
+.logodiv {
     position: absolute;
-    margin: -2px;
-    left: 590px;
-    list-style: none;
+    left: 7px;
+    top: 27px;
 }
 
-.navbar a {
-    margin-top: 10px;
-    padding: 1em;
+.nav {
+    margin-top: 26px;
+    margin-left: 65px;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -54,33 +65,14 @@ body {
     cursor: pointer;
 }
 
-.navbar a:hover {
+.nav:hover {
     text-decoration: underline;
     text-decoration-color: #2d6a4f;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
 }
 
-.navbar .navmenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#dropbtn {
-    width: 50px;
-    height: 50px;
-    border: 2px solid #2d6a4f;
-    border-radius: 10px;
-    background-color: #F8FAFF;
-    cursor: pointer;
-}
-
-#dropbtn:hover {
-    background-color: #dddfe7;
-}
-
-#indexbtn {
+#profilBtn {
     width: 130px;
     height: 35px;
     border-radius: 10px;
@@ -88,13 +80,13 @@ body {
     color: #dddfe7;
     font-size: 12px;
     position: absolute;
-    left: 175%;
-    margin-top: -2px;
+    right: 169px;
+    margin-top: 17px;
     cursor: pointer;
     border: 2px solid #2d6a4f;
 }
 
-#indexbtn:hover {
+#profilBtn:hover {
     background-color: #ffffff;
     color: #2d6a4f;
 }
@@ -104,8 +96,8 @@ body {
     color: #2E2D2D;
     font-size: 20px;
     position: relative;
-    margin-top: 30px;
-    left: 325px;
+    margin-top: 28px;
+    left: 281px;
     height: 16px;
     width: 16px;
 }
@@ -114,75 +106,31 @@ body {
     color: rgba(94, 94, 94, 0.60);
 }
 
-.dropdown-Product {
-    display: none;
-    position: absolute;
-    left: 36.2%;
-    margin-top: -6px;
-    background-color: #2d6a4f;
-    border-radius: 3px;
-}
-
-#product {
-    background-color: #2d6a4f;
-}
-
-.noDrop {
-    display: none;
-}
-
-.drop {
-    display: block;
-}
-
-.dropdown-Product a {
-    color: #dddfe7;
-}
-
-.drop:hover .dropdown-Product {
-    display: block;
-}
-
 @media (max-width: 1300px){
-    .navbar a:hover {
+    .navbar .navmenu:hover {
         text-decoration-color: #dddfe7;
     }
     .navbar .navmenu {
         flex-flow: column wrap;
         margin-top: 30px;
     }
-    .drop {
-        display: none;
-    }
-    .noDrop {
-        display: block;
-    }
 
     .logodiv {
         position: absolute;
-        left: -105%;
-        top: 2%;
+        left: 7px;
+        top: 27px;
     }
 
-    #dropbtn {
-        display: block;
-        margin-left: auto;
-        margin-right: 5px;
-    }
-
-    .navmenu li {
+    .nav {
         display: none;
         position: relative;
         top: 32px;
         background-color: #2d6a4f;
-    }
-
-    .navmenu a {
         text-align: right;
         color: #dddfe7;
     }
 
-    .navbar a:hover {
+    .nav:hover {
         color: #dddfe7;
     }
 
@@ -204,10 +152,6 @@ body {
         text-underline-offset: 5px;
     }
 
-    #shopcart {
-        left: 95%;
-        margin-top: 107px;
-    }
     #search {
         left: 86%;
         margin-top: 66px;
@@ -218,13 +162,12 @@ body {
 @media (min-width: 1300px) {
     .logodiv {
         position: absolute;
-        left: -105%;
+        left: 7px;
+        top: 27px;
     }
-    .navmenu li {
+
+    .nav{
         display: inline-block;
-    }
-    #dropbtn {
-        display: none;
     }
 }
 
