@@ -7,3 +7,11 @@ function dropdownNav() {
         open = 0;
     }
 }
+function Race() {
+    document.getElementById("Race").innerHTML += "<div>\n" +
+        "        <div class=\"profilcheval\">\n" +
+        "            <img src=\"images/images.jpg\" class=\"illustration2\" style=\"max-width:100%;height:auto ;\">\n" +
+        "            <h3 class=\"nom1\">Test</h3>\n" +
+        "        </div>\n" +
+        "    </div>"
+}
