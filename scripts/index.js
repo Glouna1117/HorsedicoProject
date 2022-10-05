@@ -8,10 +8,11 @@ function dropdownNav() {
     }
 }
 function Race() {
+    var nom = document.getElementById("test1").value
     document.getElementById("Race").innerHTML += "<div>\n" +
         "        <div class=\"profilcheval\">\n" +
         "            <img src=\"images/images.jpg\" class=\"illustration2\" style=\"max-width:100%;height:auto ;\">\n" +
-        "            <h3 class=\"nom1\">Test</h3>\n" +
+        "            <h3 class=\"nom1\">"+nom+"</h3>\n" +
         "        </div>\n" +
         "    </div>"
 }
